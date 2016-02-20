@@ -26,7 +26,7 @@ Modules with extremely deep dependency tries will not compile. It hits the 35 se
 ## What happens ?
 1. The task creates a unqiue directory in `/tmp`
 2. It fetches the git repository using archived.zip (Geit fails on node 0.12.6 :-/ or else I would have used geit clone --- geit is an smart-http client for git that runs in node)
-3. It reads the package json and figures out the dependencies that will be mission in the sandbox.
+3. It reads the package json and figures out the dependencies that will be missing in the sandbox.
 4. Installs only the missing dependencies.
 5. Runs browserify with sandbox dependencies as externals.
 6. Transpiles the code using babel 5.
