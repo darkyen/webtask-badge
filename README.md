@@ -36,7 +36,7 @@ Modules with extremely deep dependency tries will not compile. It hits the 35 se
 10. You deploy it using webtask cli.
 
 ## Why I made this ?
-I originally wanted to use plivo for an example webtask, and didn't find it in the sandbox. So I thought how cool would it be to have a webtask that compiles webtask in the webtask environment. And this is what I made. This built itself as well as [Plivo Example](https://github.com/darkyen/hello-webtask). While doing this I learnt a lot about webtask and its environment. Essentially this was hacked in 2 days!
+I originally wanted to use plivo for an example to learn using webtask, and didn't find it in the sandbox. So I thought how cool would it be to have a webtask that compiles webtask in the webtask environment. This built itself as well as [Plivo Example](https://github.com/darkyen/hello-webtask). While doing this I learnt a lot about webtask and its environment. Essentially this was hacked in 2 days (or late coffee filled eye soring nights)!
 
 ## Future additions / Plans
 - An interface.
