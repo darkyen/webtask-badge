@@ -21,7 +21,7 @@ Note: Your package.json needs an `x-webtask` field set for the origin of your we
 - Add this as a git-hook and let a webtask build your webtask on a git push.
 
 ## Known issues 
-Modules with extremely deep dependency tries will not compile. It hits the 35 second time limit.
+Modules with extremely deep dependency trees will not compile. It hits the 35 second time limit, but only when this is running on webtask. 
 
 ## What happens ?
 1. The task creates a unqiue directory in `/tmp`
