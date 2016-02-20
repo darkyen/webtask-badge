@@ -21,7 +21,8 @@ Note: Your package.json needs an `x-webtask` field set for the origin of your we
 - Add this as a git-hook and let a webtask build your webtask on a git push.
 
 ## Known issues 
-Modules with extremely deep dependency tries will not compile. It hits the 35 second time limit.
+Modules with extremely deep dependency trees will not compile. It hits the 35 second time limit, but only when this is running on webtask. (So for instance don't have babel 6 or any of cousins in your direct dependencies (its fine to have it in devDependencies)
+or use babel version from the server you can find out the versions of dependencies present already in the sandbox [here](https://tehsis.github.io/webtask-canirequire).
 
 ## What happens ?
 1. The task creates a unqiue directory in `/tmp`
